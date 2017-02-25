@@ -1,0 +1,244 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:id="@+id/scrollView">
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <Button
+        android:id="@+id/btnMeHistDatos"  android:layout_width="fill_parent"       android:layout_height="wrap_content"
+        android:layout_margin="1dp" android:drawableLeft="@drawable/bdiab1"  android:gravity="left|center_vertical"
+        android:text="Configuración" android:layout_weight="1"
+        android:textSize="22dp" style="@style/dashboard_button" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView android:layout_width="20dp"   android:layout_height="wrap_content"  />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:text="Parámetros Médicos"
+            android:gravity="left|center_vertical"
+            android:layout_margin="0dp"
+            android:onClick="Conf_ParMedic_click"  android:textSize="22dp" style="@style/dashboard_button"  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        <TextView android:layout_width="20dp"   android:layout_height="wrap_content"  />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:text="Parámetros de Usuario"
+            android:gravity="left|center_vertical"
+            android:layout_margin="0dp"
+            android:onClick="Conf_ParUser_click"  android:textSize="22dp" style="@style/dashboard_button"  />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/jerarquia3"
+        android:visibility="gone"
+        android:id="@+id/LinLayBoxParametros"
+        >
+
+
+        <LinearLayout android:id="@+id/LinLay1"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp">
+            <TextView   android:layout_width="140dp" android:layout_height="40dp"  android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl5"   android:text="Talla(cm)" />
+            <EditText   android:layout_width="10dp" android:layout_height="40dp" android:layout_weight="1" android:id="@+id/txtTalla"
+                android:inputType="numberSigned" android:singleLine="true" />
+        </LinearLayout>
+
+
+
+        <LinearLayout android:id="@+id/LinLay2"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp">
+            <TextView   android:layout_width="140dp"   android:layout_height="40dp"  android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl6"  android:text="Peso(Kg)" />
+            <EditText                        android:layout_width="10dp" android:layout_height="40dp"  android:layout_weight="1"   android:id="@+id/txtKg"
+                android:inputType="numberSigned"  android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay3"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp">
+            <TextView   android:layout_width="140dp" android:layout_height="40dp" android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl7" android:text="IMC" />
+            <EditText   android:layout_width="10dp" android:layout_height="40dp" android:layout_weight="1" android:id="@+id/txtIMC"
+                android:inputType="numberSigned" android:enabled="false" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout android:id="@+id/LinLay6qr"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button41"
+                android:layout_gravity="center_horizontal"
+                android:text="Cancelar"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:onClick="Conf_ParaUsu_clickCan"  android:textSize="14dp" style="@style/dashboard_button"  />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button42"
+                android:layout_gravity="center_horizontal"
+                android:text="Calcular IMC"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:onClick="Conf_ParaUsu_clickCam"  android:textSize="14dp" style="@style/dashboard_button"  />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp">
+        <TextView android:layout_width="20dp"   android:layout_height="wrap_content"  />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:text="Password"
+            android:gravity="left|center_vertical"
+            android:layout_margin="1dp"
+            android:onClick="Conf_Password_click"  android:textSize="22dp" style="@style/dashboard_button"  />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        style="@style/jerarquia3"
+        android:visibility="gone"
+        android:id="@+id/LinLayBoxPassword"
+        >
+
+
+        <LinearLayout android:id="@+id/passwd1"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl1b"
+                android:text="Modificar Password" />
+
+            <EditText
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/txtPass1" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/passwd2"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl1c"
+                android:text="Confirmar Password" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/txtPass2" />
+        </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/LinLay6q"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/button31"
+            android:layout_gravity="center_horizontal"
+            android:text="Cancelar"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_margin="5dp"
+            android:onClick="Conf_Password_clickCan"  android:textSize="14dp" style="@style/dashboard_button"  />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/button32"
+            android:layout_gravity="center_horizontal"
+            android:text="Cambiar"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_margin="5dp"
+            android:onClick="Conf_Password_clickCam"  android:textSize="14dp" style="@style/dashboard_button"  />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button4"  android:layout_width="fill_parent"       android:layout_height="wrap_content"
+        android:layout_margin="1dp" android:drawableLeft="@drawable/aima4"  android:gravity="left|center_vertical"
+        android:onClick="cancel7_click" android:text="Atrás"
+        android:textSize="22dp" style="@style/dashboard_button" />
+</TableLayout>
+</ScrollView>

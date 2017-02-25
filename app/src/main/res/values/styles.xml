@@ -1,0 +1,384 @@
+<resources>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/editOff</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">@color/white</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/verde</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base"></style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/barra</item>
+        <item name="colorPrimaryDark">@color/editOn1</item>
+        <item name="colorAccent">@color/editOn1</item>
+    </style>
+
+    <!--android:theme="@android:style/Theme.Holo"-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/barra</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimaryDark">@color/barra</item>
+        <item name="colorAccent">@color/editOn1</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/editOff</item>
+        <item name="colorControlNormal">@color/editOff</item>
+        <item name="colorControlActivated">@color/barra</item>
+        <item name="android:textColor">@color/editOff</item>
+        <item name="android:textColorHighlight">@color/editOn</item>
+        <item name="android:textColorLink">@color/azul</item>
+        <item name="android:paddingLeft">20sp</item>
+        <item name="android:paddingRight">20sp</item>
+        <item name="android:paddingTop">8sp</item>
+    </style>
+
+    <style name="tituloT1">
+        <item name="android:layout_height">22dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:enabled">false</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">2.5mm</item>
+        <item name="android:textColor">@color/colornegro </item>
+
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:radius">0dp</item>
+        <item name="android:background">@drawable/texttablatitulo</item>
+    </style>
+
+    <style name="tituloT2">
+        <item name="android:layout_height">22dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:enabled">false</item>
+        <item name="android:textColor">@color/colornegro </item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">4mm</item>
+    </style>
+
+    <style name="tituloT3">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colornegro </item>
+        <item name="android:background">@color/colorfila1 </item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">3mm</item>
+    </style>
+
+    <style name="tituloT4">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colornegro </item>
+        <item name="android:background">@color/colorfila2 </item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">3mm</item>
+    </style>
+
+    <!-- FORMATOS CONFIGURACION DIABETICO-->
+        <style name="jerarquiaFull">
+            <item name="android:layout_width">1dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:orientation">vertical</item>
+            <item name="android:layout_marginTop">0dp</item>
+            <item name="android:layout_marginBottom">15dp</item>
+            <item name="android:layout_marginRight">5dp</item>
+            <item name="android:layout_marginLeft">5dp</item>
+            <item name="android:background">@drawable/buttonselector</item>
+            <item name="android:drawablePadding">8dp</item>
+            <item name="android:padding">5dp</item>
+            <item name="android:radius">10dp</item>
+        </style>
+
+    <style name="jerarquia3">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:radius">10dp</item>
+    </style>
+
+    <!-- +++++++++++++++++++++++++++++++ -->
+
+
+    <style name="tabla_fila">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+
+    <style name="tabla_filaI">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:gravity">center_horizontal|top</item>
+    </style>
+
+    <style name="tabla_copi">
+        <item name="android:background">@drawable/buttonselectorlittle</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:text">COPY</item>
+        <item name="android:textSize">1.6mm</item>
+        <!--    <item name="android:drawableTop">@drawable/copiar</item>    -->
+        <item name="android:layout_marginTop">3.8dp</item>
+        <item name="android:layout_marginLeft">2dp</item>        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>       <item name="android:paddingRight">2dp</item>
+        <item name="android:radius">0dp</item>
+    </style>
+
+
+
+
+    <style name="tituloT">
+        <item name="android:layout_height">22dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:enabled">false</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">2.5mm</item>
+        <item name="android:textColor">@color/colornegro </item>
+
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:radius">5dp</item>
+        <item name="android:background">@drawable/texttablatitulo</item>
+    </style>
+
+
+
+    <style name="tabla_hora">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:enabled">false</item>
+        <item name="android:ems">10</item>
+
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:radius">5dp</item>
+        <item name="android:background">@drawable/texttabla</item>
+    </style>
+
+    <style name="tabla_rati">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_weight">5</item>
+
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:radius">5dp</item>
+        <item name="android:background">@drawable/texttabla</item>
+    </style>
+
+    <style name="tabla_senc">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_weight">5</item>
+
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:radius">5dp</item>
+        <item name="android:background">@drawable/texttabla</item>
+    </style>
+
+    <style name="gridAdmin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/gridseleccion</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="dashboard_buttonAdmin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:radius">15dp</item>
+    </style>
+
+    <style name="dashboard_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:radius">15dp</item>
+    </style>
+
+    <style name="dashboard_button2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/buttonselector2</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:radius">15dp</item>
+    </style>
+
+    <style name="dashboard_button3">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:radius">15dp</item>
+    </style>
+
+    <style name="dashboard_button_center" parent="@style/dashboard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="dashboard_buttonpek">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:background">@drawable/buttonselectorpek</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:radius">5dp</item>
+    </style>
+
+    <style name="dashboard_button_small" parent="@style/dashboard_buttonpek">
+        <item name="android:layout_width">64px</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textview_separador">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:text"> </item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="textoBonito">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/texbonselector2</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:radius">10dp</item>
+    </style>
+
+    <style name="loggin_center" parent="@style/textoBonito">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <!-- STYLOS TEXTOS Y TITULOS-->
+    <style name="titulo">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/texbonselector2</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tit2">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/texbonselector2</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:radius">0dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <!-- FORMATOS FILAS GRIDVIEW-->
+    <style name="Colcodigo">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#f7f7f7</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+</resources>
+

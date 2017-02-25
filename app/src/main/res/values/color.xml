@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="barra">#E6344A</color>
+    <color name="editOn">#F2572D</color>
+    <color name="editOff">#008972</color>
+    <color name="text">#008972</color>
+    <color name="iconR">#E6344A</color>
+    <color name="iconG">#008972</color>
+
+    <color name="barra1">#E6344A</color>
+    <color name="editOn1">#0B5379</color>
+    <color name="editOff1">#04779B</color>
+
+    <color name="barra2">#0B5379</color>
+    <color name="editOn2">#E6344A</color>
+    <color name="editOff2">#04779B</color>
+
+    <color name="editOff3">#FBB351</color>
+
+    <color name="blanco">#FEFEFE</color>
+
+    <color name="colorfila1">#ffBBBBBB</color>
+    <color name="colorfila2">#ffDDDDDD</color>
+
+    <color name="normal_start2">#ffcfcbc9</color>
+    <color name="normal_end2">#ffc8cd9b</color>
+
+    <color name="fondoApp">#ffe2e3ff</color>
+    <color name="colornegro">#ff000000</color>
+    <color name="negro">#ff000000</color>
+
+    <!--Colores de tablas-->
+    <color name="etiqueta1">#fff1e3ff</color>
+    <color name="etiqueta2">#ffe2f1ff</color>
+    <color name="fonfotitulo">#ffe2e3ff</color>
+    <!-- -->
+
+    <color name="transparente">#ffe2e3ff</color>
+    <color name="rojo">#ffff0000</color>
+    <color name="verde">#ff00ff00</color>
+    <color name="azul">#ff5858FA</color>
+    <color name="naranja">#ffFF8000</color>
+
+    <color name="background">#dcd8dc</color>
+    <color name="buttonfocus">#f2edf2</color>
+    <color name="buttonpressed">#f2f2f2</color>
+    <color name="normal">#ff0000</color>
+    <color name="normal2">#f0f0f0</color>
+
+    <color name="normal_start">#ffdfebf9</color>
+    <color name="normal_end">#ffd8fdcb</color>
+    <color name="normal_border">#ff9a9e9d</color>
+    <color name="normal_text">#ffacacac</color>
+    <color name="normal_start_multi">#CB5500</color>
+    <color name="normal_end_multi">#F88800</color>
+
+    <color name="pressed_start">#822300</color>
+    <color name="pressed_end">#D7530F</color>
+    <color name="pressed_border">#EDBAB0</color>
+    <color name="pressed_text">#FFFFFF</color>
+    <color name="pressed_start_multi">#F88800</color>
+    <color name="pressed_end_multi">#CB5500</color>
+
+    <color name="focused_start">#944224</color>
+    <color name="focused_end">#D8703B</color>
+    <color name="focused_border">#862501</color>
+    <color name="focused_text">#000000</color>
+    <color name="focused_start_multi">#F88800</color>
+    <color name="focused_end_multi">#CB5500</color>
+    <color name="focused_start_multi_1">#FDD401</color>
+    <color name="focused_end_multi_1">#E68E15</color>
+
+    <color name="disabled_start">#EAB6A6</color>
+    <color name="disabled_end">#C9AB9D</color>
+    <color name="disabled_border">#EBC7BE</color>
+    <color name="disabled_text">#EBC7BE</color>
+    <color name="disabled_start_multi">#EFC49A</color>
+    <color name="disabled_end_multi">#E0B18E</color>
+
+    <color name="disabled_and_focused_start">#C29B8C</color>
+    <color name="disabled_and_focused_end">#E2AE94</color>
+    <color name="disabled_and_focused_border">#B27E6B</color>
+    <color name="disabled_and_focused_text">#B27E6B</color>
+    <color name="disabled_and_focused_start_multi">#F2E08F</color>
+    <color name="disabled_and_focused_end_multi">#EAC896</color>
+
+    <color name="Tnormal_start">#ffeffffd</color>
+    <color name="Tnormal_end">#fff0ffd6</color>
+    <color name="Tnormal_border">#ff080909</color>
+    <color name="Tnormal_text">#ffacacac</color>
+    <color name="Tnormal_start_multi">#CB5500</color>
+    <color name="Tnormal_end_multi">#F88800</color>
+
+    <color name="Tpressed_start">#fff0ffd6</color>
+    <color name="Tpressed_end">#ffeffffd</color>
+    <color name="Tpressed_border">#EDBAB0</color>
+    <color name="Tpressed_text">#FFFFFF</color>
+    <color name="Tpressed_start_multi">#F88800</color>
+    <color name="Tpressed_end_multi">#CB5500</color>
+
+    <color name="Tfocused_start">#fff0ffd6</color>
+    <color name="Tfocused_end">#ffeffffd</color>
+    <color name="Tfocused_border">#862501</color>
+    <color name="Tfocused_text">#000000</color>
+    <color name="Tfocused_start_multi">#F88800</color>
+    <color name="Tfocused_end_multi">#CB5500</color>
+    <color name="Tfocused_start_multi_1">#FDD401</color>
+    <color name="Tfocused_end_multi_1">#E68E15</color>
+
+    <color name="Tdisabled_start">#EAB6A6</color>
+    <color name="Tdisabled_end">#C9AB9D</color>
+    <color name="Tdisabled_border">#EBC7BE</color>
+    <color name="Tdisabled_text">#EBC7BE</color>
+    <color name="Tdisabled_start_multi">#EFC49A</color>
+    <color name="Tdisabled_end_multi">#E0B18E</color>
+
+    <color name="Tdisabled_and_focused_start">#C29B8C</color>
+    <color name="Tdisabled_and_focused_end">#E2AE94</color>
+    <color name="Tdisabled_and_focused_border">#B27E6B</color>
+    <color name="Tdisabled_and_focused_text">#B27E6B</color>
+    <color name="Tdisabled_and_focused_start_multi">#F2E08F</color>
+    <color name="Tdisabled_and_focused_end_multi">#EAC896</color>
+
+</resources>

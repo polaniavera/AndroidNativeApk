@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/fondoApp">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Usuario"
+                    android:id="@+id/lbl0"
+                    android:gravity="left|center_vertical"
+                    android:textSize="15dp" />
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerDiab"
+                    android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+
+        <LinearLayout  android:id="@+id/LinLay9" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl1"
+                android:text="Nombre" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtNombre" />
+        </LinearLayout>
+
+
+        <LinearLayout  android:id="@+id/LinLay8" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl1a"
+                android:text="Nick" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtNick" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay7"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl1b"
+                android:text="Password" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/txtPass1" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay6"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl1c"
+                android:text="Confirmar Password" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/txtPass2" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay5"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lbl2"
+                android:text="Parentesco" />
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerParent"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay4"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sexo"
+                android:id="@+id/lbl3" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerSex" />
+        </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/LinLayA"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lbl4"
+                    android:text="Fecha nacimiento"
+                    android:layout_weight="0"/>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/linearFecha">
+                    <Spinner
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinnerdia"
+                        android:spinnerMode="dropdown"
+                        android:layout_weight="3"/>
+
+                    <Spinner
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinnermes"
+                        android:spinnerMode="dropdown"
+                        android:layout_weight="4" />
+
+                    <Spinner
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinneranio"
+                        android:spinnerMode="dropdown"
+                        android:layout_weight="4"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay1"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView   android:layout_width="140dp" android:layout_height="40dp"  android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/lbl5"   android:text="Talla(cm)" />
+            <EditText   android:layout_width="10dp" android:layout_height="40dp" android:layout_weight="1" android:id="@+id/txtTalla"
+                        android:inputType="numberSigned" android:singleLine="true" />
+        </LinearLayout>
+
+
+
+        <LinearLayout android:id="@+id/LinLay2"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView   android:layout_width="140dp"   android:layout_height="40dp"  android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/lbl6"  android:text="Peso(Kg)" />
+            <EditText                        android:layout_width="10dp" android:layout_height="40dp"  android:layout_weight="1"   android:id="@+id/txtKg"
+                        android:inputType="numberSigned"  android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/LinLay3"  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55dp">
+            <TextView   android:layout_width="140dp" android:layout_height="40dp" android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/lbl7" android:text="IMC" />
+            <EditText   android:layout_width="10dp" android:layout_height="40dp" android:layout_weight="1" android:id="@+id/txtIMC"
+                        android:inputType="numberSigned" android:enabled="false" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:id="@+id/btnAdd"
+            android:paddingTop="8dp"
+            android:onClick="ConfiAdd_Click"
+            style="@style/dashboard_button"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/btnCan"
+            android:onClick="cancel9_click"
+            style="@style/dashboard_button"/>
+    </TableLayout>
+</ScrollView>

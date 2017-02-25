@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_178640e15f0ffa547feb190b95a788d04efd8b7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_07202c5e8f7cd915d0c55c980edb2d5704e8ece5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_55c547cf862b7eb94686fbcdcac039173785dcfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.1\369f9aa48a629b4e92557b37326f42dc3de796e4\MPAndroidChart-v3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v3.0.1_5f5e0c210e120759c34249d6586f06de370da6c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_178640e15f0ffa547feb190b95a788d04efd8b7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.1\369f9aa48a629b4e92557b37326f42dc3de796e4\MPAndroidChart-v3.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v3.0.1_5f5e0c210e120759c34249d6586f06de370da6c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\libs\achartengine-1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0_a269cad9e3943e8b42f2c84c8dbb4fc737051b8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.1_0f7308526e5727d84e9ecb5706195feeb96e6efb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e219bedf736f6e57e297ba19e2260823de4aa9a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_761ea690550e2b9b7978c4bec5aac632d8a99623.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_07202c5e8f7cd915d0c55c980edb2d5704e8ece5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.1_0f7308526e5727d84e9ecb5706195feeb96e6efb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0_a269cad9e3943e8b42f2c84c8dbb4fc737051b8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_55c547cf862b7eb94686fbcdcac039173785dcfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_895082cc1c622cd8667fcb22d02ebadf2c5e9b7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_a5b24c3155ed5af9baaf6931dbb037c2a652e132.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_895082cc1c622cd8667fcb22d02ebadf2c5e9b7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_a5b24c3155ed5af9baaf6931dbb037c2a652e132.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e219bedf736f6e57e297ba19e2260823de4aa9a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\LENOVO\Documents\CHOQuantifier2\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_761ea690550e2b9b7978c4bec5aac632d8a99623.jar" />
+    </item>
+
+</items>

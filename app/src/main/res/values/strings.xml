@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="add_values">Add values to the chart</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="add">Add</string>
+    <string name="new_series">New series</string>
+
+    <color name="white">#FFFFFF</color>
+
+    <string name="button1">Entrar</string>
+    <string name="button2">Registrarse</string>
+    <string name="button3">Acerca de</string>
+    <string name="button4">Salir</string>
+    <string name="exit">Salir</string>
+    <string name="spTipoAlimento">Elija tipo alimento</string>
+    <string name="app_name">CHO Quantifier</string>
+    <string name="action_settings">Configuración</string>
+    <string name="lblhora">HORA</string>
+    <string name="title_activity_act_acerca_de">Acerca de CHO Quantifier</string>
+    <string name="title_activity_act_calcular_dosis">Calcular Dosis</string>
+    <string name="title_activity_act_configuaracion_diabetico">Configuración</string>
+    <string name="title_activity_act_configuracion_nodiabetico">Configuración</string>
+    <string name="title_activity_act_diabetico">Menú</string>
+    <string name="title_activity_act_modo_desconectado">Calculador de Bolos</string>
+    <string name="title_activity_act_modo_desconectado_nd">Calculador de Carbohidratos</string>
+    <string name="title_activity_act_nodiabetico">Menú</string>
+    <string name="title_activity_act_registro">Registro</string>
+    <string name="title_activity_act_parametros_medicos">Parámetros Médicos</string>
+    <string name="title_activity_act_administrador">Administrador</string>
+    <string name="title_activity_act_nuevo_alimento">Nuevo Alimento</string>
+    <string name="title_activity_act_graficos_independientes">Gráficos Independientes</string>
+    <string name="title_activity_act_grafico_combinado">Gráfico Integrado</string>
+    <string name="title_activity_act_grafico_nd">Gráfico Carbohidratos</string>
+
+    <string-array name="diabetis_array">
+        <!--<item/>-->
+        <item>Con Diabetes</item>
+        <item>Sin Diabetes</item>
+    </string-array>
+    <string-array name="parent_array">
+        <!--<item/>-->
+        <item>Padre</item>
+        <item>Madre</item>
+        <item>Hermano</item>
+        <item>Hijo</item>
+        <item>Espos@</item>
+    </string-array>
+    <string-array name="sexo_array">
+        <!--<item/>-->
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string-array name="dia_array">
+        <!--<item/>-->
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="mes_array">
+        <!--<item/>-->
+        <item>01-enero</item>
+        <item>02-febrero</item>
+        <item>03-marzo</item>
+        <item>04-abril</item>
+        <item>05-mayo</item>
+        <item>06-junio</item>
+        <item>07-julio</item>
+        <item>08-agosto</item>
+        <item>09-septiembre</item>
+        <item>10-octubre</item>
+        <item>11-noviembre</item>
+        <item>12-diciembre</item>
+    </string-array>
+
+    <string-array name="ig_array">
+        <item>01-Bajo</item>
+        <item>02-Medio</item>
+        <item>03-Alto</item>
+    </string-array>
+
+    <string-array name="anio_array">
+        <item>1940</item>
+        <item>1941</item>
+        <item>1942</item>
+        <item>1943</item>
+        <item>1944</item>
+        <item>1945</item>
+        <item>1946</item>
+        <item>1947</item>
+        <item>1948</item>
+        <item>1949</item>
+        <item>1950</item>
+        <item>1951</item>
+        <item>1952</item>
+        <item>1953</item>
+        <item>1954</item>
+        <item>1955</item>
+        <item>1956</item>
+        <item>1957</item>
+        <item>1958</item>
+        <item>1959</item>
+        <item>1960</item>
+        <item>1961</item>
+        <item>1962</item>
+        <item>1963</item>
+        <item>1964</item>
+        <item>1965</item>
+        <item>1966</item>
+        <item>1967</item>
+        <item>1968</item>
+        <item>1969</item>
+        <item>1970</item>
+        <item>1971</item>
+        <item>1972</item>
+        <item>1973</item>
+        <item>1974</item>
+        <item>1975</item>
+        <item>1976</item>
+        <item>1977</item>
+        <item>1978</item>
+        <item>1979</item>
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1983</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="lista_amplia">
+        <item>1920 asdas dasd asd asd asd </item>
+        <item>1921 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+        <item>1922 asdas dasd asd asd asd </item>
+    </string-array>
+
+    <string name="menu_settings">Opciones</string>
+    <string name="title_activity_main">Led</string>
+    <string name="bluetooth">Conectarse a</string>
+    <string name="On">Apagar</string>
+    <string name="Off">Encender</string>
+    <string name="vacio"></string>
+    <string name="Desconexion">Desconectar</string>
+    <string name="on">Turn On</string>
+    <string name="off">Turn Off</string>
+    <string name="visible">Get Visible</string>
+    <string name="list">List Devices</string>
+</resources>

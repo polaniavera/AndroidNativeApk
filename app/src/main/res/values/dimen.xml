@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_padding">8dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="layer_padding">1dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="half_button_height">25dp</dimen>
+
+    <dimen name="corner_radius2">0dp</dimen>
+
+    <dimen name="stroke_widthtitulo">1dp</dimen>
+
+    <!-- Dimensiones Boton pequenio -->
+    <dimen name="corner_radiuslittle">0dp</dimen>
+
+    <dimen name="corner_radiusgrid">0dp</dimen>
+
+
+</resources>

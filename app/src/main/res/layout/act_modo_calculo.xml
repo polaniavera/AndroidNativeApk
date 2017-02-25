@@ -1,0 +1,252 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/blanco">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="75dp" android:layout_height="40dp"
+                android:text="Tipo de Alimento"
+                android:id="@+id/lblTxt1"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="13dp"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spTipoAlimento"
+                android:layout_weight="1"
+                android:prompt="@string/spTipoAlimento"
+                android:spinnerMode="dialog"
+                android:layoutMode="opticalBounds" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="75dp" android:layout_height="40dp"
+                android:text="Seleccionar"
+                android:id="@+id/lblTxt2"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="13dp"
+                android:textIsSelectable="false"
+                android:layout_weight="0"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spNoIndustrializado"
+                android:layout_weight="1"
+                android:prompt="@string/spTipoAlimento"
+                android:spinnerMode="dialog"
+                android:layoutMode="opticalBounds" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:id="@+id/txtNoIndGrms"
+                android:layout_weight="0.09"
+                android:singleLine="true"
+                android:maxLength="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="g"
+                android:id="@+id/lblTxt3"
+                android:gravity="center_vertical"
+                android:layout_weight="0"
+                android:paddingRight="10dp"/>
+
+            <Button android:id="@+id/btnNoIndAgregar" android:drawableLeft="@drawable/cima2" style="@style/dashboard_button_small" android:onClick="NoIndAgregar_Click" />
+
+            <!--
+            <Button android:id="@+id/btnIndNuevo" android:drawableLeft="@drawable/cima1" style="@style/dashboard_button_small"/>
+            <TextView android:id="@+id/lblTxt6z" style="@style/textview_separador" />
+            -->
+        </LinearLayout>
+
+        <!-- Inicio de tabla-->
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="10dp">
+            <TextView android:text="Menú" android:id="@+id/lblTxt7" style="@style/titulo"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_weight=".50" android:text="Alimento" android:id="@+id/lblTxt7b"  style="@style/tit2" />
+            <TextView android:layout_width="0dp" android:layout_weight=".10" android:text="Por"  android:id="@+id/lblTxt7c"  style="@style/tit2" />
+            <TextView android:layout_width="0dp" android:layout_weight=".10" android:text="CHO"      android:id="@+id/lblTxt7cd" style="@style/tit2" />
+            <TextView android:layout_width="0dp" android:layout_weight=".10" android:text="IG" android:id="@+id/lblTxt7d"  style="@style/tit2" />
+            <TextView android:layout_width="0dp" android:layout_weight=".10" android:text="Prot" android:id="@+id/lblTxtProt"  style="@style/tit2" />
+            <TextView android:layout_width="0dp" android:layout_weight=".10" android:text="Gr" android:id="@+id/lblTxtGrasa"  style="@style/tit2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/Contenedortabla">
+            <a.choquantifier.app.custom.ExpandableHeightGridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridview"
+                android:numColumns="1"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="3px" style="@style/tit2" />
+        </LinearLayout>
+
+        <!-- Final de tabla-->
+
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="match_parent">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Total CHO (Ración) "
+            android:id="@+id/lblTxt8"
+            android:gravity="bottom"/>
+
+        <EditText
+            android:layout_width="80dp" android:layout_height="wrap_content" android:enabled="false" android:inputType="numberDecimal"
+            android:id="@+id/txtTotalCHO"
+            android:ems="10"
+            android:text="0.0"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:gravity="bottom|center_horizontal" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Total Proteina"
+                android:id="@+id/lblTxtProTotal"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp" android:layout_height="wrap_content" android:enabled="false" android:inputType="numberDecimal"
+                android:id="@+id/txtProTotal"
+                android:ems="10"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Total Grasa"
+                android:id="@+id/lblTxtGrasaTotal"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp" android:layout_height="wrap_content" android:enabled="false" android:inputType="numberDecimal"
+                android:id="@+id/txtGrasaTotal"
+                android:ems="10"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="0dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="IG Promedio Ingesta "
+                android:id="@+id/lblTxt9"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/txtPromIG"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="match_parent" android:paddingTop="5dp">
+            <Button android:text="Aceptar"
+                android:id="@+id/btnAceptar"
+                android:drawableTop="@drawable/daccept"
+                android:layout_weight="1"
+                style="@style/dashboard_button"
+                android:onClick="Aceptar_click" />
+            <Button
+                android:id="@+id/btnLimpiarGluco"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/dlimpiar"
+                android:text="Limpiar"
+                android:onClick="limpiarTabla_click" />
+            <Button android:text="Cancelar"
+                android:id="@+id/btnCancelar"
+                android:drawableTop="@drawable/dcancel"
+                android:layout_weight="1"
+                style="@style/dashboard_button"
+                android:onClick="Cancelar_click" />
+        </LinearLayout>
+
+    </TableLayout>
+</ScrollView>

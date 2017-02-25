@@ -1,0 +1,39 @@
+apply plugin: 'android'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    //compileSdkVersion 19
+    //buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    //compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:design:23.2.1'
+}
+
+

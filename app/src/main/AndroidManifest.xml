@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="a.choquantifier.app" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:name="a.choquantifier.app.GlobalData"
+        android:allowBackup="true"
+        android:icon="@drawable/cho_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name="a.choquantifier.app.Act_login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_acerca_de"
+            android:label="@string/title_activity_act_acerca_de" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_configuracion"
+            android:label="@string/title_activity_act_configuaracion_diabetico" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_configuracion_nd"
+            android:label="@string/title_activity_act_configuracion_nodiabetico" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_modo_dosis"
+            android:label="@string/title_activity_act_modo_desconectado" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_modo_calculo"
+            android:label="@string/title_activity_act_modo_desconectado_nd" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_registro"
+            android:label="@string/title_activity_act_registro" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_parametrosMedicos"
+            android:label="@string/title_activity_act_parametros_medicos" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_administrador"
+            android:label="@string/title_activity_act_administrador" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_nuevo_alimento"
+            android:label="@string/title_activity_act_nuevo_alimento" >
+        </activity>
+        <activity
+        android:name="a.choquantifier.app.Act_activity_tabs"
+        android:label="Con Diabetes" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_activity_tabs_nd"
+            android:label="Sin Diabetes" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_graficos_independientes"
+            android:label="@string/title_activity_act_graficos_independientes" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_grafico_combinado"
+            android:label="@string/title_activity_act_grafico_combinado" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_grafico_nodiabetico"
+            android:label="Gráfico Carbohidratos" >
+        </activity>
+        <activity
+            android:name="a.choquantifier.app.Act_editar_alimento"
+            android:label="Editar Alimento" >
+        </activity>
+
+        <activity
+            android:name="a.choquantifier.app.PruebaTabs"
+            android:label="Prueba Tabs" >
+        </activity>
+
+        <activity
+            android:name="a.choquantifier.app.Act_Diabetico_Tabs"
+            android:label="Calcular Dosis" >
+        </activity>
+
+        <activity
+            android:name="a.choquantifier.app.Act_No_Diabetico_Tabs"
+            android:label="Calcular Carbohidratos" >
+        </activity>
+    </application>
+
+</manifest>

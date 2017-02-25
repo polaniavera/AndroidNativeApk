@@ -1,0 +1,90 @@
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:background="@color/fondoApp"
+            >
+
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:text="Configuración de Usuarios"
+            android:id="@+id/titulo"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <!-- Inicio de tabla-->
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_weight="0" android:layout_width="100px" android:text="Código"     android:id="@+id/lblTxt7a" style="@style/tit2" />
+            <TextView android:layout_weight="1" android:layout_width="1px"   android:text="Nombre"     android:id="@+id/lblTxt7b" style="@style/tit2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="150dp" android:id="@+id/Contenedortabla"
+            android:layout_marginBottom="10dp">
+            <GridView android:numColumns="1" android:layout_width="fill_parent" android:layout_height="match_parent"    android:id="@+id/gridviewuser"  style="@style/gridAdmin"/>
+        </LinearLayout>
+
+        <!-- Final de tabla-->
+
+        <TextView   android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:id="@+id/txtIdUS"
+                    android:visibility="gone"
+                    style="@style/loggin_center"/>
+
+        <TextView   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Seleccione un usuario para ver su descripción."
+            android:id="@+id/txtInformacion"
+            android:maxLines="10"
+            style="@style/loggin_center"/>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnBorrarUS"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="BorrarUS_click"
+            android:text="Borrar Usuario"
+            android:textSize="20dp"
+            android:visibility="gone"
+            style="@style/dashboard_buttonAdmin" />
+
+        <LinearLayout android:id="@+id/LinLayBorrar" android:visibility="gone" android:layout_width="fill_parent" style="@style/jerarquiaFull" >
+            <TextView android:id="@+id/lbl1b" android:text="¿Seguro que desea borrar el usuario?" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@+id/LinLayBor1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                <Button  android:id="@+id/btnBorrarSI" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="BorrarUS_SI_click" android:text="SI"   style="@style/dashboard_button" />
+                <Button  android:id="@+id/btnBorrarNO" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="BorrarUS_NO_click" android:text="NO"   style="@style/dashboard_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdministradorSalir"
+            android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="salirConf_click"
+            android:text="Salir"
+            android:textSize="20dp"
+            style="@style/dashboard_buttonAdmin" />
+
+    </TableLayout>
+</ScrollView>

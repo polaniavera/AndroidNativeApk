@@ -1,0 +1,320 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/fondoApp">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            tools:context="appcho.app.Act_configuracion_nodiabetico"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/relativeLayout" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" "
+                android:id="@+id/lblTitulo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal" />
+
+
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/encabezado" android:layout_below="@+id/lblTitulo">
+                <EditText style="@style/tituloT" android:id="@+id/tit1r"       android:text="Hora"                 android:layout_width="55dp"
+                    android:textColor="@android:color/black" />
+                <EditText style="@style/tituloT" android:id="@+id/tit2r"       android:text="Ratio"                android:layout_width="1dp" android:layout_weight="5" />
+                <EditText style="@style/tituloT" android:id="@+id/tit3r"       android:text="Sensibilidad"         android:layout_width="1dp" android:layout_weight="5" />
+                <LinearLayout style="@style/tabla_filaI"                                                           android:width="50dp">    </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila0" android:layout_below="@+id/encabezado">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila0" android:text="00:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio0"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad0"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil0" android:onClick="copiar_click0"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila1" android:layout_below="@+id/fila0">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila1" android:text="01:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio1"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad1"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil1" android:onClick="copiar_click1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila2" android:layout_below="@+id/fila1">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila2" android:text="02:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio2"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad2"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil2" android:onClick="copiar_click2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila3" android:layout_below="@+id/fila2">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila3" android:text="03:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio3"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad3"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil3" android:onClick="copiar_click3"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila4" android:layout_below="@+id/fila3">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila4" android:text="04:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio4"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad4"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil4" android:onClick="copiar_click4"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila5" android:layout_below="@+id/fila4">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila5" android:text="05:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio5"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad5"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil5" android:onClick="copiar_click5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila6" android:layout_below="@+id/fila5">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila6" android:text="06:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio6"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad6"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil6" android:onClick="copiar_click6"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila7" android:layout_below="@+id/fila6">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila7" android:text="07:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio7"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad7"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil7" android:onClick="copiar_click7"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila8" android:layout_below="@+id/fila7">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila8" android:text="08:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio8"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad8"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil8" android:onClick="copiar_click8"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila9" android:layout_below="@+id/fila8">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila9" android:text="09:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio9"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad9"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil9" android:onClick="copiar_click9"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila10" android:layout_below="@+id/fila9">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila10" android:text="10:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio10"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad10"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil10" android:onClick="copiar_click10"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila11" android:layout_below="@+id/fila10">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila11" android:text="11:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio11"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad11"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil11" android:onClick="copiar_click11"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila12" android:layout_below="@+id/fila11">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila12" android:text="12:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio12"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad12"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil12" android:onClick="copiar_click12"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila13" android:layout_below="@+id/fila12">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila13" android:text="13:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio13"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad13"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil13" android:onClick="copiar_click13"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila14" android:layout_below="@+id/fila13">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila14" android:text="14:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio14"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad14"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil14" android:onClick="copiar_click14"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila15" android:layout_below="@+id/fila14">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila15" android:text="15:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio15"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad15"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil15" android:onClick="copiar_click15"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila16" android:layout_below="@+id/fila15">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila16" android:text="16:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio16"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad16"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil16" android:onClick="copiar_click16"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila17" android:layout_below="@+id/fila16">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila17" android:text="17:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio17"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad17"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil17" android:onClick="copiar_click17"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila18" android:layout_below="@+id/fila17">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila18" android:text="18:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio18"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad18"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil18" android:onClick="copiar_click18"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila19" android:layout_below="@+id/fila18">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila19" android:text="19:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio19"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad19"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil19" android:onClick="copiar_click19"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila20" android:layout_below="@+id/fila19">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila20" android:text="20:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio20"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad20"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil20" android:onClick="copiar_click20"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila21" android:layout_below="@+id/fila20">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila21" android:text="21:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio21"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad21"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil21" android:onClick="copiar_click21"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila22" android:layout_below="@+id/fila21">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila22" android:text="22:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio22"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad22"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil22" android:onClick="copiar_click22"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/tabla_fila" android:id="@+id/fila23" android:layout_below="@+id/fila22">
+                <EditText style="@style/tabla_hora" android:id="@+id/lblFila23" android:text="23:00" />
+                <EditText style="@style/tabla_rati" android:id="@+id/ratio23"                        />
+                <EditText style="@style/tabla_senc" android:id="@+id/sencibilidad23"                 />
+                <LinearLayout style="@style/tabla_filaI" >
+                    <Button   style="@style/tabla_copi" android:id="@+id/btnFil23" android:onClick="copiar_click23"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/filaGuardar"
+                            android:layout_below="@+id/fila23">
+                            <Button
+                                style="@style/dashboard_button"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:text="Guardar"
+                                android:id="@+id/btnGuardar"
+                                android:onClick="GuardarPM_click"
+                                android:gravity="center_horizontal|top"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/filaCancelar"
+                            android:layout_below="@+id/filaGuardar">
+                            <Button
+                                style="@style/dashboard_button"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:text="Cancelar"
+                                android:id="@+id/btnCancelar"
+                                android:onClick="CancelarPM_click"
+                                android:gravity="center_horizontal|top"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </TableLayout>
+</ScrollView>

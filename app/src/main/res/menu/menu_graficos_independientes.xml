@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="a.choquantifier.app.Act_graficos_inependientes" >
+
+    <item
+        android:id="@+id/actionCalendar"
+        android:title=""
+        android:icon="@drawable/ic_calendar_white_48dp"
+        app:showAsAction="ifRoom"/>
+    
+    <item android:id="@+id/action_picker"
+        android:title="Cambiar fecha"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_exit"
+        android:title="@string/exit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

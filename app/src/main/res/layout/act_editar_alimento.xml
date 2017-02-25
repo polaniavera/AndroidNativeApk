@@ -1,0 +1,233 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/blanco">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="75dp" android:layout_height="40dp"
+                android:text="Tipo de Alimento"
+                android:id="@+id/lblTxt1"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="13dp"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spTipoAlimento"
+                android:layout_weight="1"
+                android:prompt="@string/spTipoAlimento"
+                android:spinnerMode="dialog"
+                android:textColor="#FF0000"
+                android:layoutMode="opticalBounds" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="75dp" android:layout_height="40dp"
+                android:text="Seleccionar"
+                android:id="@+id/lblTxt2"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="13dp"
+                android:textIsSelectable="false"
+                android:layout_weight="0"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spNoIndustrializado"
+                android:layout_weight="1"
+                android:prompt="@string/spTipoAlimento"
+                android:spinnerMode="dialog"
+                android:layoutMode="opticalBounds" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:paddingTop="15sp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lblTxt8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Factor CHO"
+                android:id="@+id/lblTxt8"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:id="@+id/txtFactorCHO"
+                android:ems="10"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Factor Proteina"
+                android:id="@+id/lblTxtProTotal"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp" android:layout_height="wrap_content" android:enabled="false" android:inputType="numberDecimal"
+                android:id="@+id/txtFactorProteina"
+                android:ems="10"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Factor Grasa"
+                android:id="@+id/lblTxtGrasaTotal"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp" android:layout_height="wrap_content" android:enabled="false" android:inputType="numberDecimal"
+                android:id="@+id/txtFactorGrasa"
+                android:ems="10"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Factor Fibra"
+                android:id="@+id/lblTxtFibraTotal"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp" android:layout_height="wrap_content" android:enabled="false" android:inputType="numberDecimal"
+                android:id="@+id/txtFactorFibra"
+                android:ems="10"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="0dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="IG"
+                android:id="@+id/lblTxt9"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLength="2"
+                android:ems="10"
+                android:id="@+id/txtIg"
+                android:text="0.0"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:gravity="bottom|center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="match_parent" android:paddingTop="5dp">
+            <Button android:text="Editar"
+                android:id="@+id/btnAceptar"
+                android:drawableTop="@drawable/daccept"
+                android:layout_weight="1"
+                style="@style/dashboard_button" />
+            <Button
+                android:id="@+id/btnLimpiar"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/dlimpiar"
+                android:text="Limpiar"
+                android:onClick="limpiarTabla_click" />
+            <Button android:text="Cancelar"
+                android:id="@+id/btnCancelar"
+                android:drawableTop="@drawable/dcancel"
+                android:layout_weight="1"
+                style="@style/dashboard_button"
+                android:onClick="Cancelar_click" />
+        </LinearLayout>
+
+    </TableLayout>
+</ScrollView>

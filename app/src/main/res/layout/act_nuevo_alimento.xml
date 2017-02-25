@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/blanco">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/txtAlimento"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:hint="Nombre Alimento"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/txtTamPorcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:inputType="numberSigned"
+                        android:hint="Tamaño Porción (g)"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/txtTamCHO"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:inputType="numberSigned"
+                        android:maxLength="6"
+                        android:hint="Contenido CHO (g)"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/txtTamFibra"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:inputType="numberSigned"
+                        android:maxLength="6"
+                        android:hint="Contenido Fibra (g)"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/txtTamGrasa"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:inputType="numberSigned"
+                        android:maxLength="6"
+                        android:hint="Contenido Grasa (g)"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:id="@+id/txtTamProteina"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:inputType="numberSigned"
+                        android:maxLength="6"
+                        android:hint="Contenido Proteína (g)"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView android:layout_width="250sp"
+                    android:layout_height="40dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lbl5"
+                    android:text="Indice Glicémico (IG)"
+                    android:gravity="left|center_vertical"
+                    android:textSize="20dp"
+                    android:textColor="@color/text"
+                    android:paddingLeft="40sp"
+                    android:paddingTop="8sp"/>
+
+                <Spinner android:layout_width="100sp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerIG"
+                    android:spinnerMode="dropdown"
+                    android:paddingRight="20sp"
+                    android:paddingTop="8sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:paddingTop="15sp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/spinnerIG" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Composición"
+                android:id="@+id/btnAddAli"
+                android:paddingTop="8dp"
+                android:onClick="ConfiAdd_Click"
+                style="@style/dashboard_button"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:id="@+id/btnCancelar"
+                android:onClick="btnCancelar_Click"
+                style="@style/dashboard_button"/>
+
+        </LinearLayout>
+    </TableLayout>
+</ScrollView>
